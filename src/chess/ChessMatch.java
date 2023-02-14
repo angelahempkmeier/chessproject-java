@@ -163,7 +163,7 @@ public class ChessMatch {
         for(Piece p : list){
             boolean[][] mat = p.possibleMoves();
             for(int i = 0; i < board.getRows(); i++){
-                for(int j = 0; j < board.getColumns(); i++){
+                for(int j = 0; j < board.getColumns(); j++){
                     if(mat[i][j]){
                         Position source = ((ChessPiece)p).getChessPosition().toPosition();
                         Position target = new Position(i, j);
